@@ -56,6 +56,10 @@
       width: 100%;
       height: 240px;
       margin-bottom: 1rem;
+      object-fit: contain;
+      background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     svg {
       width: 100%;
@@ -97,102 +101,21 @@
 <body>
   <div class="layout">
     <article class="card">
-      <div class="avatar cyber">
-        <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <linearGradient id="cyberSkin" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#12ffff" stop-opacity="0.8" />
-              <stop offset="100%" stop-color="#0f0f2b" />
-            </linearGradient>
-            <linearGradient id="cyberGoggles" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#ffe352" />
-              <stop offset="50%" stop-color="#fd6dfc" />
-              <stop offset="100%" stop-color="#00ffe2" />
-            </linearGradient>
-            <radialGradient id="cyberGlow" cx="0.5" cy="0.5" r="0.6">
-              <stop offset="0%" stop-color="#ff2442" stop-opacity="0.8" />
-              <stop offset="100%" stop-color="#000" stop-opacity="0" />
-            </radialGradient>
-          </defs>
-          <rect x="70" y="30" width="180" height="150" rx="28" ry="28" fill="#0b0f1c" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
-          <path d="M140 50c0-6 12-6 12 0" stroke="#0f0f2b" stroke-width="6" fill="none" />
-          <circle cx="100" cy="100" r="30" fill="url(#cyberSkin)" />
-          <circle cx="220" cy="100" r="30" fill="url(#cyberSkin)" />
-          <rect x="60" y="80" width="200" height="60" rx="30" fill="url(#cyberGoggles)" />
-          <rect x="120" y="130" width="80" height="12" rx="6" fill="url(#cyberSkin)" />
-          <path d="M60 90c20 10 40 10 70 0c28-9 58-9 80 0c28 10 60 10 70 0" stroke="#0ff" stroke-width="3" fill="none" />
-          <circle cx="160" cy="60" r="40" fill="url(#cyberGlow)" />
-          <circle cx="160" cy="60" r="18" fill="#1d1b47" />
-          <path d="M140 190l40 0" stroke="#00ffe2" stroke-width="4" stroke-linecap="round" />
-          <g stroke="#00ffe2" stroke-width="3" stroke-linecap="round">
-            <path d="M90 200c0-20 50-6 60-6s60-14 60 6" />
-            <path d="M125 150c0 18-14 30-25 30" />
-          </g>
-        </svg>
-      </div>
+      <img class="avatar" src="cyber-lab.png" alt="Cyber-Lab DexterBot" />
       <h2>Cyber-Lab DexterBot</h2>
       <p>Cued from the reference: oversized round glasses, square jaw, and wild orange hair. I layered neon circuitry across the goggles, and a transparent lab coat collar beams into wires so it reads like Dexter from the image but in a futuristic AI body.</p>
       <div class="badge"><span></span> neon goggles + circuit tattoos</div>
     </article>
 
     <article class="card">
-      <div class="avatar quantum">
-        <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <linearGradient id="quantumVisor" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#ff2442" />
-              <stop offset="50%" stop-color="#ffef5d" />
-              <stop offset="100%" stop-color="#00c3ff" />
-            </linearGradient>
-            <linearGradient id="quantumSparks" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="rgba(255,255,255,0.8)" />
-              <stop offset="100%" stop-color="rgba(255,255,255,0)" />
-            </linearGradient>
-          </defs>
-          <path d="M80 60c20-32 40-40 80-40s60 8 80 40c18 30 10 90-50 110s-120-18-130-60" fill="none" stroke="#111" stroke-width="26" stroke-linecap="round" />
-          <path d="M90 60c12-14 40-26 70-26s70 12 80 26" stroke="#01010d" stroke-width="40" stroke-linecap="round" fill="#04040a" filter="drop-shadow(0 0 8px rgba(255, 58, 150, 0.6))" />
-          <rect x="92" y="100" width="136" height="60" rx="14" fill="#04040a" stroke="#12ffff" stroke-width="2" />
-          <path d="M105 130h110" stroke="url(#quantumVisor)" stroke-width="28" stroke-linecap="round" />
-          <path d="M145 60c0 12-8 20-8 30" stroke="#ff2442" stroke-width="5" />
-          <path d="M180 60c0 12 8 20 8 30" stroke="#ff2442" stroke-width="5" />
-          <circle cx="160" cy="188" r="40" fill="rgba(0,0,0,0.3)" stroke="url(#quantumVisor)" stroke-width="5" />
-          <circle cx="160" cy="188" r="18" fill="#0a0a1f" stroke="#00ffe2" stroke-width="3" />
-          <path d="M140 110c0 25-40 36-60 56s-25 78 18 88" stroke="#00ffe2" stroke-width="3" fill="none" stroke-dasharray="4 6" />
-          <path d="M180 110c0 25 40 36 60 56s25 78-18 88" stroke="#ff2442" stroke-width="3" fill="none" stroke-dasharray="4 6" />
-          <path d="M120 30l80 0" stroke="#00ffe2" stroke-width="6" stroke-linecap="round" />
-          <path stroke="url(#quantumSparks)" stroke-width="3" d="M72 220h176" />
-        </svg>
-      </div>
+      <img class="avatar" src="quantum-dex.png" alt="Quantum Dex AI" />
       <h2>Quantum Dex AI</h2>
       <p>Dexter’s proportions (big brow, small body, white coat collar) anchor this design, then I added a “D”-shaped visor, orbiting data frame, and neural lattice chest so it feels like a powered-up, cosmic version of the cartoon genius.</p>
       <div class="badge"><span></span> visor data streams + rotating frame</div>
     </article>
 
     <article class="card">
-      <div class="avatar holo">
-        <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <linearGradient id="holoGlow" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#19f7ff" />
-              <stop offset="100%" stop-color="#ff2bbb" />
-            </linearGradient>
-          </defs>
-          <polygon points="110,30 170,10 210,60 200,120 160,140 120,90" fill="rgba(13, 60, 91, 0.8)" stroke="url(#holoGlow)" stroke-width="3" />
-          <path d="M150 40c10-20 20-24 30-10s20 30 14 40" stroke="#0ef5ff" stroke-width="4" fill="none" />
-          <circle cx="150" cy="90" r="20" fill="rgba(13, 24, 54, 0.8)" stroke="rgba(255,255,255,0.9)" stroke-width="2" />
-          <path d="M130 68l15 24 20-28" stroke="#ff2bbb" stroke-width="3" fill="none" />
-          <path d="M90 140c30-40 60-40 90-12 32 32 22 65-4 80" stroke="#74f7ff" stroke-width="2" fill="none" stroke-dasharray="6 4" />
-          <path d="M170 150c25 10 30 38 20 60" stroke="#ff2bbb" stroke-width="2" fill="none" stroke-dasharray="4 5" />
-          <g opacity="0.5">
-            <rect x="110" y="150" width="100" height="50" rx="18" fill="rgba(13, 60, 91, 0.4)" />
-            <path d="M120 170h20" stroke="#19f7ff" stroke-width="2" />
-            <path d="M120 180h40" stroke="#19f7ff" stroke-width="2" />
-            <path d="M120 190h30" stroke="#19f7ff" stroke-width="2" />
-          </g>
-          <path d="M200 210c-3-6-12-18-24-26-18-12-40-14-58-4s-30 28-28 42" stroke="#00ffe2" stroke-width="2" fill="none" />
-          <circle cx="160" cy="210" r="6" fill="#ffef5d" />
-        </svg>
-      </div>
+      <img class="avatar" src="holo-assist.png" alt="Lab Assistant Hologram" />
       <h2>Lab Assistant Hologram</h2>
       <p>Inspired by the silhouette in your reference: full orange tuft, round glasses, and trademark collar. His body breaks into light trails and data panels, making him feel like Dexter himself came alive as a holographic AI.</p>
       <div class="badge"><span></span> silhouette + holo UI</div>
